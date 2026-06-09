@@ -1,6 +1,6 @@
 # Medico-Redigo
 
-A web app where you type in a symptom and it tells you what to do about it — home remedy, how long it usually lasts, and a doctor to contact if it gets worse.
+A web app where you type in a symptom and it tells you what to do about it, how long it usually lasts, and a doctor to contact if it gets worse.
 
 Built this with React on the frontend, Node/Express on the backend, and MongoDB to store the symptoms and remedy data. Everything runs through Docker so setup is pretty straightforward.
 
@@ -17,10 +17,10 @@ Built this with React on the frontend, Node/Express on the backend, and MongoDB 
 
 ## Stack
 
-- **Frontend** — React 19, Vite, Bootstrap 5, React Router
-- **Backend** — Node.js, Express, Mongoose
-- **Database** — MongoDB
-- **Infra** — Docker Compose
+- **Frontend**: React 19, Vite, Bootstrap 5, React Router
+- **Backend**: Node.js, Express, Mongoose
+- **Database**: MongoDB
+- **Infra**: Docker Compose
 
 ---
 
@@ -119,12 +119,10 @@ prescription/
 
 ## Things to fix before production
 
-Passwords are stored as plain text right now — that needs to change before this goes anywhere public. A few other things worth addressing:
+Passwords are stored as plain text right now that needs to change before this goes anywhere public. A few other things worth addressing:
 
 - Hash passwords with bcrypt
 - Use JWT instead of the localStorage flag for auth
 - Move the MongoDB URI into an environment variable
 - Add some input validation on the backend
 ```
-
-Then hit **Commit changes** and you're done.
